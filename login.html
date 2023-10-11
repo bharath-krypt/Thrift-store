@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>The Thrift Store</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        <link rel="stylesheet" href="ts-style.css">
+    </head>
+    
+    <body class="bg">
+        <section>
+            <img src="img/loginbg.jpg" alt="">
+        </section>
+        <form class="login-form">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" id="text1" />
+            <input type="password" placeholder="Password" id="text2" />
+            <input type="button" value="Login"  onclick="javascript:validate()" />
+        </form>
+
+
+        <script type="text/javascript">
+        function validate()
+        {
+            if(   document.getElementById("text1").value == "thriftstore"
+               && document.getElementById("text2").value == "lathkor" )
+            {
+                location.href="The Thrift Store.html";
+            }
+            else
+            {
+                location.href="fail.html";
+            }
+        }
+        </script>
+
+    </body>
+</html>
